@@ -1,0 +1,120 @@
+
+
+            button {
+                background-color:deepskyblue;
+                font-family: 'Press Start 2P';
+                color: white;
+                font-size: large;
+                padding: 20px;
+                border-radius: 999px;
+                border-color: transparent;
+                position: relative;
+                width: auto;
+                
+            }
+
+            button:hover {
+                animation: glow 1s;
+                text-shadow: 0 0 20px rgb(0, 0, 0);
+            }
+
+            iframe {
+                text-align: center;
+                position: relative;
+                margin-top: 200px;
+            }
+
+
+
+
+
+            @keyframes glow {
+                0% {text-shadow: 0 0 0px rgb(0, 0, 0);}
+                100% {text-shadow: 0 0 20px rgb(0, 0, 0);}
+            }
+
+            .companies {
+                margin-top: 50%;
+                position: absolute;
+                width: 100px;
+                gap: 20px;
+
+            }
+
+
+
+            .businessbox {
+                align-items: flex-start;
+                display: flex;
+                gap: 20px;
+                font-family: 'Press Start 2P';
+                color: white;
+                flex: 1;
+                width: 100%;
+            }
+
+
+
+            .businessbox img {
+                
+                max-width: 1000px;
+                max-height: 400px;
+            }
+
+            .texdiv {
+                flex-direction: column;
+                flex: 1;
+            }
+            
+            body {
+                height: auto;
+                width: auto;
+                margin: 0;
+                padding: 0;
+                font-family: 'Press Start 2P';
+            }
+
+            form {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                font-family: 'Press Start 2P';
+                color: white;
+                box-shadow: 0 0 15px rgba(0,0,0,0.2);
+                flex-direction: column;
+                gap: 20px;
+                
+            }
+
+            form input {
+                border-radius: 999px;
+                font-size: x-large;
+                border: transparent;
+
+                
+            }
+
+            form label {
+                border: transparent;
+            }
+
+            .gradround {
+                background: repeating-linear-gradient(white, deepskyblue);
+                background-size: 200% 200%;
+            }
+
+            .transparent {
+                background: transparent;
+            }
+
+            .catalogue {
+                font-family: 'Press Start 2P';
+                text-align: center;
+                position: relative;
+                color: white;
+                text-shadow: 0 0 20px white;
+                background: deepskyblue;
+                background-size: 100% 100%;
+            }
+

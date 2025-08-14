@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title id="Title">Catalogue</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+
+
+    </head>
+
+    <body class="catalogue" id="bodyodor">
+        <img id="bgimg">
+        <h1 id="title"></h1>
+        
+        <p id="desc"></p>
+        <p id="import"></p>
+        <p id="export"></p>
+        <p id="type"></p>
+        <p id="owner"></p>
+        <p id="coordinatos"></p>
+        <p id="chain"></p>
+        <img id="locpic">
+        
+        
+        
+
+        <script>
+
+            const current = localStorage.getItem("current") ;
+            const processed = JSON.parse(current)
+
+            console.log(processed)
+
+           document.getElementById("title").innerHTML = processed["name"]
+           document.getElementById("Title").innerHTML = processed["name"]
+           document.getElementById("bgimg").src = processed["picture"]
+           document.getElementById("desc").innerHTML = processed["description"]
+           document.getElementById("owner").innerHTML = processed["minecraft"] + ", AKA:" + processed["discord"]
+           document.getElementById("coordinatos").innerHTML = "coordinates: " + processed["coordinates"]
+           document.getElementById("import").innerHTML = "imports: " + processed["import"]
+           document.getElementById("export").innerHTML = "exports: " + processed["export"]
+           document.getElementById("type").innerHTML = "type of business: " + processed["businesstype"]
+           document.getElementById("locpic").src = "locations/" + processed["locpic"];
+           if (processed["chain"] != null) {
+                document.getElementById("chain").innerHTML = "is part of chain: " + processed["chain"]
+           }
+           
+
+
+
+           
+        </script>
+    </body>
+</html>
