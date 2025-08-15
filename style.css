@@ -1,10 +1,10 @@
 
 
             button {
-                background-color:deepskyblue;
-                font-family: 'Press Start 2P';
+                background-color: chocolate;
+                font-family: 'Playfair+Display';
                 color: white;
-                font-size: large;
+                font-size: xx-large;
                 padding: 20px;
                 border-radius: 999px;
                 border-color: transparent;
@@ -38,6 +38,7 @@
                 position: absolute;
                 width: 100px;
                 gap: 20px;
+                
 
             }
 
@@ -99,11 +100,6 @@
                 border: transparent;
             }
 
-            .gradround {
-                background: repeating-linear-gradient(white, deepskyblue);
-                background-size: 200% 200%;
-            }
-
             .transparent {
                 background: transparent;
             }
@@ -116,5 +112,16 @@
                 text-shadow: 0 0 20px white;
                 background: deepskyblue;
                 background-size: 100% 100%;
+            }
+
+            .imageslider {
+                animation: slide 5s infinite;
+            }
+
+            @keyframes slide {
+                0% {background-position: 0%};
+                50% {background-position: 100%};
+                100% {background-position: 200%;}
+
             }
 
